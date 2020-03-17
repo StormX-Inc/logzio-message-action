@@ -7,4 +7,4 @@ LOG_TYPE=${LOG_TYPE:?Need to set LOG_TYPE}
 
 set -e
 
-echo {\"message\": \"$MESSAGE\", \"level\": \"$MESSAGE_LEVEL\"} | curl "https://listener.logz.io:8071?token=$LOGZIO_TOKEN&type=$LOG_TYPE" --data-binary @-
+echo {\"message\": \"$MESSAGE\", \"level\": \"$MESSAGE_LEVEL\", \"label\": \"$MESSAGE_LABEL\"} | curl "https://listener.logz.io:8071?token=$LOGZIO_TOKEN&type=$LOG_TYPE" --data-binary @-

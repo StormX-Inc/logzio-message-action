@@ -26,6 +26,7 @@ jobs:
         LOG_TYPE: "nginx"
         MESSAGE: "New message"
         MESSAGE_LEVEL: "debug"
+        MESSAGE_LABEL: "some label"
 ```
 
 
@@ -37,6 +38,7 @@ jobs:
 | `LOG_TYPE` | The log type, eg: `nginx`. | `env` | **Yes** |
 | `MESSAGE` | The message. | `env` | **Yes** |
 | `MESSAGE_LEVEL` | The message level, eg: `error`, `warn`, `info`, `debug` etc. | `env` | **Yes** |
+| `MESSAGE_LABEL` | The message label. | `env` | **No** |
 
 
 ### Required Secret Variables
